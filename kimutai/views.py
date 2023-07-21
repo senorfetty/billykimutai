@@ -31,4 +31,4 @@ def home(request):
         return redirect(reverse('home') + '#contact')
     
     else:
-        return render (request, 'home.html')
+        return render (request, 'index.html')
