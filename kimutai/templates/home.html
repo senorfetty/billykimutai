@@ -1,0 +1,376 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billy Bii</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+
+    <!-- font stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+   
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet"> 
+
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xxx" crossorigin="anonymous">
+
+    <!-- Icon Font Stylesheet -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet"  type="text/css" href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/959f3a58a4.js" crossorigin="anonymous"></script>
+   
+
+</head>
+<body>
+    <!-- <div class="background">
+        <div class="shape"></div>
+    </div> -->
+
+
+    <!-- top navigation bar-->
+    <!-- <nav class="navbar navbar-expand-lg  ">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fa fa-fw fa-user"></i>BILLY KIMUTAI</a>
+            <div class="split">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>                
+                </button>
+                <button type="button" class="btn-close" aria-label="Close"></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home"><i class="fa fa-fw fa-home"></i>HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resume"><i class="fa fa-fw fa-file"></i>RESUME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects"><i class="fa fa-fw fa-code"></i>PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills"><i class="fa fa-fw fa-tasks"></i>SKILLS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"><i class="fa fa-fw fa-envelope"></i>CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>  
+
+ -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0 px-lg-5">
+        <a href="#about" class="navbar-brand d-block">
+            <h2 id="navtitle" class="m-0 display-6 text-secondary" style=" font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><i class="fa fa-fw fa-user"></i>BILLY KIMUTAI</h2>
+        </a>
+        <div class="ms-auto">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>        
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="#home" class="nav-item nav-link text-center scroll-link"><i class="fa fa-fw fa-home"></i>HOME</a>
+                    <a href="#about" class="nav-item nav-link scroll-link"><i class="fa fa-fw fa-user"></i>ABOUT ME</a>
+                    <a href="#cv" class="nav-item nav-link scroll-link"><i class="fa fa-fw fa-file"></i>RESUME</a>
+                    <a href="#projects" class="nav-item nav-link scroll-link"><i class="fa fa-fw fa-code"></i>PROJECTS</a>
+                    <a href="#skills" class="nav-item nav-link scroll-link"><i class="fa fa-fw fa-tasks"></i>SKILLS</a>
+                    <a href="#contact" class="nav-item nav-link scroll-link"><i class="fa fa-fw fa-envelope"></i>CONTACT</a>
+                </div>
+            </div> 
+        </div>
+    </nav>
+
+    <!--Home-->
+    <div id="home" class="animated-background">
+        <div class="card-body">
+            <h2 class="display-4 text-uppercase mb-0">HELLO  &#x1F60A;</h1>
+            <h2 class="display-5 text-uppercase mb-0">BILLY KIMUTAI HERE, &#x1F44B;</h1>
+            <h2 class="display-3 text-uppercase mb-0">Developer,</h1>
+            <h2 class="display-7 text-uppercase mb-0">Passionate about building</h1>
+            <h2 class="display-8 text-uppercase mb-0">Nice to meet you</h1>
+                <br>
+            <div class="row">
+                <div class="col text-center">
+                    <a class="btn btn-primary btn-square me-2" href="{% static 'pdf/MY CV.pdf' %}" id="cv" >VIEW CV</a>
+                </div>
+                <div class="col text-center">
+                    <a class="btn btn-primary btn-square me-2" href="#contact">CONTACT</a>
+                </div>
+            </div>     
+            <div class="text-center d-flex-end mt-4">
+                <a class="btn btn-primary btn-square rounded-circle me-2" href="https://twitter.com/fetty_senor"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-linkedin"></i></a>
+                <a class="btn btn-primary btn-square rounded-circle" href="https://www.instagram.com/senor_fetty/"><i class="fab fa-instagram"></i></a>
+            </div>     
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!--ABout-->
+    <section>
+        <div class="container" id="about">
+            <h1 class=" display-3 text-uppercase mb-0 text-light text-center">ABOUT ME</h1>
+            <div class="row">
+                <div class="col">
+                    <div class="image-container">
+                        <img src="static/img/avi2.jpg">
+                    </div>
+                </div>
+                <div class="col" >                    
+                    <span>
+                        I'm Billy Kimutai, based in Kenya.
+                        I am a web developer who is passionate about building and designing Web application. 
+                        I approach each project with enthusiasm and committment so as to deliver the best possible results.
+                        I am always thrilled to be a team player so as to contribute and gain more skills.
+                    </span>
+                </div>
+            </div>            
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <!--Projects-->
+    <div class="container-fluid2 p-5" id="projects">
+        <div class="mb-5 text-center">
+            <h1 class="display-3 text-uppercase mb-0">PROJECTS</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="image-container2">
+                    <img src="{% static 'img/booking apt.jpg' %}" >            
+                </div>
+            </div>
+            <div class="col">
+                <span>
+                    This is a doctor booking site for a Hospital which aims at reducing paperwork and long queues. <br>
+                    I developed it using PHP, HTML, CSS and JavaScript with MySQL Database. <br>
+                    Source code here, <br>
+                    <a class="btn btn-primary btn-square me-2" href="https://github.com/senorfetty/docpat"> Github</a>
+                </span>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <hr class="text-light">
+        <div class="row">
+            <div class="col">
+                <div class="image-container2">
+                    <img src="{% static 'img/chinasq.jpg' %}" >            
+                </div>
+            </div>
+            <div class="col">
+                <span>
+                    An Ecommerce website for the China Square mall. <br>
+                    It aim is to make purchase of goods and products easier. <br>
+                    I developed it using Python, HTML, CSS and JavaScript with Postgresql Database.<br>
+                    Source code here, <br>
+                    <a class="btn btn-primary btn-square me-2" href="https://github.com/senorfetty/wemzee"> Github</a>
+                </span>
+            </div>
+        </div>        
+    </div>
+    <br>
+    <br>
+
+
+    <!--skills-->
+    <main>
+        <div class="container-fluid2 p-5" id="skills">
+            <div class="mb-5 text-center">
+                <h1 class="display-3 text-primary text-uppercase mb-0">SKILLS</h1>
+            </div>   
+            <div class="skill">
+                <i class="fab fa-html5 fa-beat"></i>
+                <div class="skill-details">
+                    <span class="skill-name">HTML5</span>
+                    <span class="skill-percentage">95%</span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-animate" style="width: 95%;"></div>
+            </div>
+            <br>
+            <div class="skill">
+                <i class="fab fa-css3 fa-beat"></i>
+                <div class="skill-details">
+                    <span class="skill-name">CSS</span>
+                    <span class="skill-percentage">90%</span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-animate" style="width: 90%;"></div>
+            </div>
+            <br>
+            <div class="skill">
+                <i class="fab fa-python fa-beat"></i>
+                <div class="skill-details">
+                    <span class="skill-name">PYTHON</span>
+                    <span class="skill-percentage">80%</span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-animate" style="width: 80%;"></div>
+            </div>
+            <br>
+            <div class="skill">
+                <i class="fab fa-js fa-beat"></i>
+                <div class="skill-details">
+                    <span class="skill-name">JAVASCRIPT</span>
+                    <span class="skill-percentage">70%</span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-animate" style="width: 70%;"></div>
+            </div>
+            <br>
+            <div class="skill">
+                <i class="fas fa-database mysql-icon fa-beat"></i>
+                <div class="skill-details">
+                    <span class="skill-name">MySQL</span>
+                    <span class="skill-percentage">70%</span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-animate" style="width: 70%;"></div>
+            </div>
+            <br>
+            <div class="skill">
+                <i class="fab fa-react fa-beat"></i>
+                <div class="skill-details">
+                    <span class="skill-name">REACT</span>
+                    <span class="skill-percentage">50%</span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-animate" style="width: 50%;"></div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Contact Form-->
+    <div class="container-fluid p-5" id="contact">
+        <div class="mb-5 text-center">
+            <h1 class="display-3 text-uppercase mb-0">CONTACT</h1>
+        </div>
+        {% if messages %}
+        <div class="swsw text-center text-uppercase">            
+            {% for message in messages %}
+            {{ message }}
+            {% endfor %}
+        </div>
+        {% endif %}
+        <div class="row g-0">
+            <div class="col-lg-6">
+                <div class="bg-dark py-5">
+                    <form method="post">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                {% csrf_token %}
+                                <input type="name" class="form-control bg-light border-0 px-4" name="name" placeholder="Your Name" style="height: 55px;">
+                            </div>
+                            <div>
+                                <input type="email" class="form-control bg-light border-0 px-4" name="email" placeholder="Your Email" style="height: 55px;">
+                            </div>
+                            <div>
+                                <textarea class="form-control bg-light border-0 px-4 py-3" rows="4" name="message" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>   
+   
+
+
+
+    <a href="#" class="btn btn-dark py-3 fs-4 back-to-top"><i class="bi bi-arrow-up">Back to Top</i></a>
+
+    <!-- footer start-->
+    <div class="footer">
+        <div class="container-fluid bg-dark text-secondary px-5 mt-5" >
+            <div class="row gx-5" >
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <p class="mb-0">10101, Mombasa, KENYA</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <a href="mailto:billykimbett@gmail.com">
+                                <p class="mb-0">billykimbett@gmail.com</p></a>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <a href="tel:+254792593059">
+                                <p class="mb-0">+254792593059</p></a>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square rounded-circle me-2" href="https://twitter.com/fetty_senor"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-linkedin"></i></a>
+                                <a class="btn btn-primary btn-square rounded-circle" href="https://www.instagram.com/senor_fetty/"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <div class="container-fluid py-4 py-lg-0 px-5" style="background: #111111;">
+            <div class="row gx-5">
+                <div class="col-lg-8">
+                    <div class="py-lg-4">
+                        <p class="text-secondary mb-0">&copy; <a class="text-light fw-bold" href="#">2023</a>. All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="py-lg-4 ">
+                        <p class="text-light mb-0">Designed by <a class="text-light fw-bold" href="#">Senor Fetty</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+   <!-- js script static files-->
+    <script src="static/js/nav.js"></script>
+</body>
+</html>
