@@ -49,3 +49,26 @@ scrollLinks.forEach(link => {
 //   progressBar.style.width = skillPercentage;
 // }
 
+
+document.getElementById('cont').addEventListener('submit', async function (e) {
+  e.preventDefault();
+  const emailInput = document.getElementById('email-input');
+  const email = emailInput.value;
+
+  const response = await fetch('/verify_email/', {
+      method: 'POST',
+      body: JSON.stringify({ email }),
+      headers: {
+          'Content-Type': 'application/json',
+      },
+  });
+
+  const data = await response.json();
+
+  if (data.is_valid) {
+      // Email is valid, proceed with form submission
+      this.submit();
+  } else {
+      alert('Please enter a valid email address.');
+  }
+});

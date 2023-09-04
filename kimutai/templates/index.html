@@ -218,11 +218,30 @@
                 </span>
             </div>
         </div>      
+        <br>
+        <hr>
+        <hr class="text-light">
+        <div class="row">
+            <div class="col">
+                <div class="image-container2">
+                    <img src="static/img/movie.jpg" >            
+                </div>
+            </div>
+            <div class="col">
+                <span>
+                    Developed a dynamic and user-friendly movie app that leverages the OMDB (Open Movie Database) API. <br>
+                    It provides users with an extensive database of movie information. <br>
+                    The app allows users to effortlessly search for movies by title, browse detailed movie descriptions, access cast and crew information, view posters, and even watch trailers.  <br>
+                    <!-- Users can also save their favorite movies and create personalized watchlists for future reference. <br> -->
+                    I developed it using Python, HTML, CSS and JavaScript.<br>
+                    Source code here, <br>
+                    <a class="btn btn-primary btn-square me-2" href="https://github.com/senorfetty/movie"> Github</a>
+                </span>
+            </div>
+        </div>
     </div>
     <br>
     <br>
-
-
     <!--skills-->
     <main>
         <div class="container-fluid2 p-5" id="skills">
@@ -313,14 +332,14 @@
         <div class="row g-0">
             <div class="col-lg-6">
                 <div class="bg-dark py-5">
-                    <form method="post">
+                    <form method="post" id="cont">
                         <div class="row g-3">
                             <div class="col-6">
                                 {% csrf_token %}
                                 <input type="name" class="form-control bg-light border-0 px-4" name="name" placeholder="Your Name" style="height: 55px;">
                             </div>
                             <div>
-                                <input type="email" class="form-control bg-light border-0 px-4" name="email" placeholder="Your Email" style="height: 55px;">
+                                <input type="email" class="form-control bg-light border-0 px-4" id="email-input" name="email" placeholder="Your Email" style="height: 55px;">
                             </div>
                             <div>
                                 <textarea class="form-control bg-light border-0 px-4 py-3" rows="4" name="message" placeholder="Message"></textarea>
