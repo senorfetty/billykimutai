@@ -1,1 +1,1 @@
-# My portfolio built using HTML, CSS, Javascript and Python
+Portfolio built using HTML, CSS, Javascript and Python
